@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin: 30px 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .card a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="спанчбоб.png" alt="Фото пользователя">
+        <h2>Иван Иванов</h2>
+        <p>Email: <a href="mailto:ivan@example.com">ivan@example.com</a></p>
+        <p>Дата рождения: 01.01.1990</p>
+        <p>Город: Москва</p>
+    </div>
+    <div class="card">
+        <img src="Oleg.png" alt="Фото пользователя">
+        <h2>Олег Елизаров</h2>
+        <p>Email: <a href="mailto:elizarov09gmail.com">elizarov09gmail.com</a></p>
+        <p>Дата рождения: 12.11.1974</p>
+        <p>Город: Реутов</p>
+    </div>
+    <div class="card">
+        <img src="зерокодер.png" alt="Фото пользователя">
+        <h2>Сергей Смирнов</h2>
+        <p>Email: <a href="mailto:sergey@example.com">sergey@example.com</a></p>
+        <p>Дата рождения: 10.10.1988</p>
+        <p>Город: Новосибирск</p>
+    </div>
+</body>
+</html>
